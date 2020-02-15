@@ -1,0 +1,53 @@
+<html>
+<head>
+<style type="text/css">
+body{margin:0; background:green;}
+.header{height:120px;}
+.menu{height:50px; background:black;}
+.content{height:450px; background:#fff;}
+#browser{width:50%; height:450px; float:right; border:1px solid black;}
+#editor{width:45%; height:450px; float:left; resize:none; border:1px solid black; }
+.menu input[type="button"]  {margin:5px 0 0 200px; width:140px; height:40px;}
+</style type= "text/javascript">
+<script>
+function myTRY()
+{
+var code = document.getElementById("editor").value;
+document.getElementById("browser").innerHTML = code;
+}
+function TRY()
+{
+var code = document.getElementById("editor").value="";
+var code = document.getElementById("editor").value;
+document.getElementById("browser").innerHTML = code;
+}
+</script>
+</head>
+<body >
+<div class="main">
+<div class ="header"></div>
+<div class ="menu">
+<input type="button" value=">>RUN" onclick="myTRY()" />
+<input type="button" value="CLEAR"onclick="TRY()" />
+</div>
+<div class ="content">
+<div id="browser"></div>
+<textarea id="editor">
+<html>
+<head>
+<title>Heading Example</title>
+</head>
+<body>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+</body>
+</html>
+</textarea>
+
+</div>
+</body>
+</html>

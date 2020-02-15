@@ -1,0 +1,279 @@
+<html>
+<head>
+<title>project-2</title>
+<style>
+* {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .navbar {
+		position:fixed;
+		height:30px
+		position:fixed;
+		width:100%;
+            font-size: 18px;
+            background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding-bottom: 10px;
+			
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+			
+        }
+
+        .nav-links,
+        .logo {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .main-nav li {
+            text-align: center;
+            margin: 15px auto;
+		
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .navbar-toggle {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+
+            .main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .main-nav li {
+                margin: 0;
+            }
+
+            .nav-links {
+                margin-left: 40px;
+            }
+
+            .logo {
+                margin-top: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .logo:hover,
+            .nav-links:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+		
+.sidenav {
+  overflow-x:auto;
+margin-left:46px;
+margin-top:118px;
+  height: 100%; 
+  width: 290px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color:#9966CC; 
+  overflow-x: hidden; 
+  padding-top: 70px; 
+  transition: 0.5s; 
+  border-radius:5px 5px 0px 0px;
+
+}
+#mySidenav .sidenav
+{
+
+}
+
+.sidenav a {
+  padding: 4px 8px 2px 32px;
+  text-decoration: none;
+  font-size: 23.5px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  border-bottom:0.7px solid white;
+}
+
+
+.sidenav a:hover {
+background:#9900CC;
+opacity:1px; 
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 30px;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 10px;}
+  .sidenav a {font-size: 18px;}
+}
+#title h1{
+text-shadow:4px 5px 4px  pink;
+}
+#frame1 iframe
+{
+border:none;
+}				
+		</style>
+
+<script>
+
+let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+  mainNav.classList.toggle('active');
+});
+function openNav() {
+  document.getElementById("mySidenav").style.width = "230px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</head >
+<body bgcolor="#CCCCFF">
+<nav class="navbar" style="height:8%">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo"><img src="H:\New folder (2)\logo4.jpg" height="52" width="105" style="opacity:0.6"></a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+             <a href="file:///F:/project/0-start/project4.htm" class="nav-links">Home</a>
+            </li>
+            <li>
+               <a href="https://www.youtube.com/watch?v=nJjbbAC2N28&list=PLdYkObur3tQtBTbYirZGcrWPuPRmmDA6n" class="nav-links">Video</a>
+            </li>
+            
+            <li>
+               <a href="file:///F:/project/15-about%20us/ab.pdf" class="nav-links">About Us</a>
+            </li>
+            <li>
+                  <a href="file:///F:/project/14-contact%20us/contact.htm" class="nav-links">Contact us</a>
+            </li>
+        </ul>
+    </nav><br><br><br><br><br>
+	<div id="mySidenav" class="sidenav" style="">
+	  <a href="javascript:void(0)" class="closebtn" ><p>Tags</p></a>
+  <a href="file:///F:/project/0-start/project4.htm" >Introduction</a>
+  <a href="file:///F:/project/1-head/head.htm" style="background:#9900CC;" >Heading</a>
+  <a href="file:///F:/project/2-font/fnt.htm">Font</a>
+  <a href="file:///F:/project/3-peragraph/peragraphh.htm">Peragraph</a>
+  <a href="file:///F:/project/4-hr/horizontalrow.htm">Horizontal-row</a>
+  <a href="file:///F:/project/10-Html-comments/comment.htm" >Comments</a>
+<a href="file:///F:/project/5-list/lst.htm" >List</a>
+	<a href="file:///F:/project/6-Marquee/marquee.htm" >Marquee</a>
+  <a href="file:///F:/project/7-Image/imag.htm" >Image</a>
+<a href="file:///F:/project/8-hyperlink/hyplnk.htm" >Hyperlink</a> 
+	<a href="file:///F:/project/9-Html-elements/htmelemnt.htm">Html-element</a>
+  <a href="file:///F:/project/11-html-table/table.htm"  >table</a>
+ <a href="file:///F:/project/12-background/backg.htm" >Background</a>
+ <a href="file:///F:/project/13-form/form.htm">form</a>
+	 <a href="file:///H:/project%20file/3-peragraph/tiittle.htm">Meta-tags</a>
+  <a href="file:///H:/project%20file/3-peragraph/tiittle.htm">Frameset</a>
+    <a href="file:///H:/project%20file/1-Heading/tiittle.htm">images</a>
+	 <a href="file:///H:/project%20file/1-Heading/tiittle.htm">images</a>
+	 <a href="file:///H:/project%20file/3-peragraph/tiittle.htm">Meta-tags</a>
+  <a href="file:///H:/project%20file/3-peragraph/tiittle.htm">Frameset</a>
+    <a href="file:///H:/project%20file/1-Heading/tiittle.htm">images</a>
+  </div>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+<fieldset style="background:white;height:150%;width:50%;margin-left:323px;margin-top:-60px;border:none;">
+<div style="margin-top:8px;"><p><a href="file:///F:/project/0-start/project4.htm" style="text-decoration:none;">home>></a><font color="blue">Heading</font></p><br></div><hr style="width:95%;align:right;margin:left:4px;margin-top:-3px;opacity:0.4">&nbsp;
+<h1>&nbsp;Heading Tag</h1><hr style="width:95%;align:center;margin:left:4px;">
+
+<textarea style="border:1;height:41%;width:92%;margin-left:20px;margin-top:19px;background:#CCCCFF;font-size:22;border-radius:4px;">
+Any document starts with a heading. You can use different sizes for your headings.
+HTML also has six levels of headings, which use the elements <h1,h2___h6> While displaying any heading, browser adds one line before and one line after that heading.
+These range in importance from <h1>, </h1> 
+By default, headings are usually left aligned, 
+but by setting the ALIGN attribute of various headings elements
+ the text may be aligned to the right, left or center of the screen.
+</textarea><br>&nbsp;
+<h1>&nbsp;Example</h1><hr style="width:95%;align:center;margin:left:4px;">
+<textarea style="border:1;height:32%;width:92%;margin-left:20px;margin-top:19px;background:#CCCCFF;font-size:16;border-radius:4px;">
+<html>
+<head>
+<title>Heading Example</title>
+</head>
+<body>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6> /*heading seesion */
+</body>
+</html>
+
+</textarea>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="file:///F:/project/1-head/onlineplatform.htm" target="new" style="margin-left:4px;"><font size="5" color="black" style="background:pink;">Try-YourSelf Here</font></h6><br><br><br>
+<br>
+</fieldset><br><br><br>
+<a href="file:///F:/project/0-start/project4.htm"  style="background:green;border-radius:7px;size:70px;color:white;border:1px solid green;margin-left:330px;font-size:40;text-decoration:none;">Previous</a>
+<a href="file:///F:/project/2-font/fnt.htm"  style="background:green;border-radius:7px;size:70px;color:white;border:1px solid green;margin-left:363px;font-size:40;text-decoration:none;">next>></a>
+</div>
+<div><img src="H:\New folder (2)\blog.jpg" style="position:fixed;border:1;height:32%;width:19%;margin-left:1010px;margin-top:-1084;border-radius:3px 3px 4px 4px;"><br>
+<iframe  src="https://www.youtube.com/embed/1CoBHqSErzg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  style="position:fixed;border:none;height:200;width:260;margin-left:1010px;margin-top:-780;border-radius:3px 3px 4px 4px;background:gray;"></iframe>
+</div>
+</body>
+</html>
